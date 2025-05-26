@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hussain Isaid - Portfolio</title>
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <button id="brightness-toggle" class="brightness-toggle">
-        <i class="fas fa-sun"></i>
-    </button>
+    
 </head>
 <body>
     <canvas id="galaxy"></canvas>
     
     <header>
+        <button id="brightness-toggle" class="brightness-toggle">
+        <i class="fas fa-sun"></i>
+    </button>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -38,7 +48,7 @@
     <section id="about" class="about">
         <h2>About Me</h2>
         <div class="about-content">
-            <img src="https://via.placeholder.com/300" alt="Hussain Isaid" class="profile-photo">
+            <img src="https://placehold.co/300" alt="Hussain Isaid" class="profile-photo">
             <div class="about-text">
                 <p>Hello! I'm a passionate software developer with expertise in web development and design. I love creating elegant solutions to complex problems.</p>
                 <div class="skills">
@@ -62,7 +72,7 @@
         <h2>My Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                <img src="https://placehold.co/400x300" alt="Project 1">
                 <h3>E-Commerce Platform</h3>
                 <p>A full-stack e-commerce platform built with React and Node.js</p>
                 <div class="project-links">
@@ -72,7 +82,7 @@
             </div>
 
             <div class="project-card">
-                <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                <img src="https://placehold.co/400x300" alt="Project 2">
                 <h3>Task Management App</h3>
                 <p>A React-based task management application with drag-and-drop functionality</p>
                 <div class="project-links">
@@ -82,7 +92,7 @@
             </div>
 
             <div class="project-card">
-                <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                <img src="https://placehold.co/400x300" alt="Project 3">
                 <h3>Weather Dashboard</h3>
                 <p>Real-time weather application using OpenWeather API</p>
                 <div class="project-links">
@@ -114,5 +124,14 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        offset: 100,
+        once: true
+    });
+</script>
+
 </body>
 </html>
