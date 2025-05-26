@@ -37,3 +37,21 @@ function drawStars() {
 }
 
 drawStars();
+document.addEventListener('DOMContentLoaded', () => {
+    const brightnessToggle = document.getElementById('brightness-toggle');
+    const body = document.body;
+    
+    brightnessToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        // Toggle icon
+        const icon = brightnessToggle.querySelector('i');
+        if (body.classList.contains('dark-mode')) {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        } else {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+    });
+});
