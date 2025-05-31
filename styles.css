@@ -125,6 +125,75 @@ section {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease, pulse 2s ease infinite alternate;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Professional Background and Education Styles */
+.professional-background, .education {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.professional-background h3, .education h3, .skills h3 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--primary-color);
+    animation: fadeIn 1s ease;
+}
+
+.professional-background h3::after, .education h3::after, .skills h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
+    animation: expandWidth 1.5s ease forwards;
+}
+
+.experience-item, .education-item {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid var(--accent-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: slideInLeft 0.8s ease forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.experience-item:nth-child(2), .education-item:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.experience-item:hover, .education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    background: rgba(52, 152, 219, 0.05);
+}
+
+.experience-item h4, .education-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.duration, .institution {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .skills ul {
@@ -140,7 +209,19 @@ section {
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
+    animation: popIn 0.5s ease forwards;
+    opacity: 0;
+    transform: scale(0.8);
 }
+
+.skills li:nth-child(1) { animation-delay: 0.1s; }
+.skills li:nth-child(2) { animation-delay: 0.2s; }
+.skills li:nth-child(3) { animation-delay: 0.3s; }
+.skills li:nth-child(4) { animation-delay: 0.4s; }
+.skills li:nth-child(5) { animation-delay: 0.5s; }
+.skills li:nth-child(6) { animation-delay: 0.6s; }
+.skills li:nth-child(7) { animation-delay: 0.7s; }
+.skills li:nth-child(8) { animation-delay: 0.8s; }
 
 .project-grid {
     display: grid;
@@ -291,6 +372,46 @@ body.dark-mode .social-links a {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50px;
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 

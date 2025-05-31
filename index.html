@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hussain Isaid - Portfolio</title>
+    <title>Hussaini Said - Portfolio</title>
     <!-- Favicon links -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     
-    <!-- Stylesheets -->
+    <!-- Stylesheets - remove Tailwind CSS -->
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="dist/output.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -24,22 +24,23 @@
         <button id="brightness-toggle" class="brightness-toggle">
         <i class="fas fa-sun"></i>
     </button>
-        <nav>
+            <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contacts</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hussain Isaid</h1>
+            <h1>Hussaini Said</h1>
             <p class="tagline">Software Developer & Designer</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn primary">View My Work</a>
+                &#124;
                 <a href="#contact" class="btn secondary">Contact Me</a>
             </div>
         </div>
@@ -48,9 +49,42 @@
     <section id="about" class="about">
         <h2>About Me</h2>
         <div class="about-content">
-            <img src="https://placehold.co/300" alt="Hussain Isaid" class="profile-photo">
+            <img src="/images/Screenshot 2024-09-14 223545.png" alt="Hussain Isaid" class="profile-photo">
             <div class="about-text">
                 <p>Hello! I'm a passionate software developer with expertise in web development and design. I love creating elegant solutions to complex problems.</p>
+                
+                <!-- Professional Background subsection -->
+                <div class="professional-background">
+                    <h3>Professional Background</h3>
+                    <div class="experience-item">
+                        <h4>Senior Frontend Developer at TechInnovate Solutions</h4>
+                        <p class="duration">2022 - Present</p>
+                        <p>Lead the development of responsive web applications using React and modern JavaScript. Improved application performance by 40% through code optimization and implementing best practices.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h4>Web Developer at Digital Craft Agency</h4>
+                        <p class="duration">2019 - 2022</p>
+                        <p>Developed and maintained client websites across various industries including e-commerce and healthcare. Collaborated with design teams to implement pixel-perfect UI/UX designs.</p>
+                    </div>
+                </div>
+                
+                <!-- Education subsection -->
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>Master of Science in Computer Science</h4>
+                        <p class="institution">Tech University</p>
+                        <p class="duration">2017 - 2019</p>
+                        <p>Specialized in Web Technologies and Software Engineering. Graduated with honors.</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Bachelor of Science in Software Engineering</h4>
+                        <p class="institution">State University</p>
+                        <p class="duration">2013 - 2017</p>
+                        <p>Relevant coursework: Data Structures, Algorithms, Database Systems, Web Development.</p>
+                    </div>
+                </div>
+                
                 <div class="skills">
                     <h3>Skills</h3>
                     <ul>
@@ -122,7 +156,6 @@
     <footer>
         <p>&copy; 2025 Hussain Isaid. All rights reserved.</p>
     </footer>
-
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
