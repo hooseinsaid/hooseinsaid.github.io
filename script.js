@@ -1,3 +1,4 @@
+// TEMPLATE: Galaxy background animation
 const canvas = document.getElementById('galaxy');
 const ctx = canvas.getContext('2d');
 
@@ -37,13 +38,14 @@ function drawStars() {
 }
 
 drawStars();
+
+// TEMPLATE: Brightness (dark mode) toggle
 document.addEventListener('DOMContentLoaded', () => {
     const brightnessToggle = document.getElementById('brightness-toggle');
     const body = document.body;
     
     brightnessToggle.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
-        
         // Toggle icon
         const icon = brightnessToggle.querySelector('i');
         if (body.classList.contains('dark-mode')) {
@@ -55,3 +57,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+// TEMPLATE: Add more JS as needed for your site

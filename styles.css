@@ -1,4 +1,5 @@
 :root {
+    /* TEMPLATE: Customize your color palette here */
     --primary-color: #2c3e50;
     --accent-color: #3498db;
     --text-color: #333;
@@ -19,10 +20,13 @@ html {
     scroll-behavior: smooth;
 }
 
+/* TEMPLATE: Add or remove global styles as needed */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
+    /* TEMPLATE: Set your preferred font-family and base styles */
 }
 
 canvas#galaxy {
@@ -91,6 +95,7 @@ section {
         rgba(255, 255, 255, 0.9),
         rgba(255, 255, 255, 0.7)
     );
+    /* TEMPLATE: Add a background image or color here if desired */
     position: relative;
     overflow: hidden;
 }
@@ -132,6 +137,7 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease, pulse 2s ease infinite alternate;
     transition: transform 0.3s ease;
+    /* TEMPLATE: Adjust profile photo size and style as needed */
 }
 
 .profile-photo:hover {
@@ -216,6 +222,7 @@ section {
     animation: popIn 0.5s ease forwards;
     opacity: 0;
     transform: scale(0.8);
+    /* TEMPLATE: Style your skill tags here */
 }
 
 .skills li:nth-child(1) { animation-delay: 0.1s; }
@@ -242,6 +249,7 @@ section {
     overflow: hidden;
     box-shadow: 0 5px 15px var(--shadow-color);
     transition: var(--transition);
+    /* TEMPLATE: Customize project card appearance */
 }
 
 .project-card::before {
@@ -304,6 +312,7 @@ section {
     color: var(--primary-color);
     font-size: 2rem;
     transition: color 0.3s;
+    /* TEMPLATE: Style your social icons */
 }
 
 .social-links a:hover {
@@ -315,6 +324,7 @@ footer {
     padding: 2rem;
     background: var(--primary-color);
     color: white;
+    /* TEMPLATE: Customize footer style */
 }
 
 .brightness-toggle {
@@ -330,6 +340,7 @@ footer {
     height: 40px;
     cursor: pointer;
     transition: all 0.3s ease;
+    /* TEMPLATE: Style the brightness toggle button */
 }
 
 .brightness-toggle:hover {
